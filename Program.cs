@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Person Information = new Person();
+
+            //Add People
+            Information.AddPerson = (new Person(1, "Ian", "Brooks", "Red", 30, true));
+            Information.AddPerson = (new Person(1, "Ian", "Brooks", "Red", 30, true));
+            Information.AddPerson = (new Person(1, "Ian", "Brooks", "Red", 30, true));
         }
     }
 }
