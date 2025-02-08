@@ -13,9 +13,9 @@ namespace Lab1
         {
             RelationshipType = type;
         }
-        public static void ShowRelationship(Person Person1,Person Person2)
+        public static void ShowRelationship(Person person1,Person person2)
         {
-            Console.WriteLine();
+            Console.WriteLine($"Relationship between {person1.FirstName} and {person2.FirstName} is: ");
         }
     }
 }
