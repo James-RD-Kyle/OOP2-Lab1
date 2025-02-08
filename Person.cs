@@ -23,9 +23,21 @@ namespace Lab1
             Age = age;
             IsWorking = isWorking;
         }
-        public void DisplayPersonInfo()
+        public static void DisplayPersonInfo(Person employee)
         {
-            Console.WriteLine($"Name: {FirstName} {LastName}");
+            Console.WriteLine($"{employee.PersonId}: {employee.FirstName} {employee.LastName}'s Favourite Color is {employee.FavouriteColour}");
+        }
+        public static void ChangeFavouriteColour(Person employee)
+        {
+            employee.FavouriteColour = ("White");
+        }
+        public static void GetAgeInTenYears(Person employee)
+        {
+            Console.WriteLine($"{employee.FirstName} {employee.LastName}'s Age in 10 years is: {employee.Age + 10}");
+        }
+        public static void ToString(Person employee)
+        {
+            Console.WriteLine($"PersonId: {employee.PersonId}\nFirstName: {employee.FirstName}\nLastName: {employee.LastName}\nFavouriteColour: {employee.FavouriteColour}\nAge: {employee.Age}\nIsWorking: {employee.IsWorking}");
         }
     }
 
